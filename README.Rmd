@@ -85,7 +85,7 @@ talks <- leaf(
   "Talks",
   "https://github.com/EmilHvitfeldt/talks",
   "My public talks",
-  1
+  5
 )
 
 xaringan.gallery <- leaf(
@@ -151,6 +151,20 @@ censored <- leaf(
   4
 )
 
+workshops <- leaf(
+  "Workshops",
+  "https://github.com/EmilHvitfeldt/workshops",
+  "My Public Workshops",
+  1
+)
+
+courses <- leaf(
+  "Courses",
+  "https://github.com/EmilHvitfeldt/courses",
+  "My Public Courses",
+  3
+)
+
 header <- function(emoji, text) {
   res <- glue::glue(":{emoji}: <b>{text}</b>")
   emoji_glue(res)
@@ -180,14 +194,15 @@ data <- tibble::tribble(
     "r-color-pals", c(), r_color_palettes,
     "blog", c(), blog,
     "xaringan.gallery", c(), xaringan.gallery,
-  "books",    c("smltar"), header("books", "Books"),
+  "books", c("smltar"), header("books", "Books"),
     "smltar", c(), smltar,
-  "edu",      c("islr_tidymodels", "emilverse"), header("teacher", "Education Material"),
+  "edu", c("islr_tidymodels", "emilverse"), header("teacher", "Education Material"),
     "islr_tidymodels", c(), islr_tidymodels,
     "emilverse", c(), emilverse,
-  "other", c("talks"), header("light_bulb", "Other"),
-    "talks", c(), talks
-  
+  "other", c("talks", "workshops", "courses"), header("light_bulb", "Other"),
+    "talks", c(), talks,
+    "workshops", c(), workshops,
+    "courses", c(), courses
 )
 
 cat(paste0(cli::tree(data, width = 10000), collapse = "  \n"))

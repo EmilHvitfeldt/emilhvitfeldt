@@ -29,6 +29,8 @@
 │ ├─ <a href="https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html">ISLR tidymodels labs</a> - Tidymodels translation of ISLR labs  
 │ └─ <a href="https://github.com/EmilHvitfeldt/emilverse">emilverse</a>            - Collection of personal packages and templates  
 └─💡 <b>Other</b>  
-  └─ <a href="https://github.com/EmilHvitfeldt/talks">Talks</a> - My public talks
+  ├─ <a href="https://github.com/EmilHvitfeldt/talks">Talks</a>     - My public talks  
+  ├─ <a href="https://github.com/EmilHvitfeldt/workshops">Workshops</a> - My Public Workshops  
+  └─ <a href="https://github.com/EmilHvitfeldt/courses">Courses</a>   - My Public Courses
 
 </pre>
