@@ -1,11 +1,34 @@
+
 <pre>
-🙂 Emil Hvitfeldt
-┣━━ 📦 Open Source Packages
-┃   ┣━━ [Prismatic](https://github.com/EmilHvitfeldt/prismatic) - Simple color manipulation
-┃   ┗━━ [paletteer](https://github.com/EmilHvitfeldt/paletteer)  - All color palettes in R
-┣━━ ⭐ Online Projects 
-┃   ┣━━ [R Color Palettes](https://github.com/EmilHvitfeldt/r-color-palettes) - Showcase of color palettes in R
-┃   ┗━━ [R Text Data](https://github.com/EmilHvitfeldt/R-text-data) - Textual data sources in R
-┗━━ 🎙️ Educational Material
-    ┗━━ [ISLR tidymodels labs](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html) - Translation of labs from ISLR
+
+🧩 <b>Emil Hvitfeldt</b>  
+├─📦 <b>Packages</b>  
+│ ├─⚙️ <b>tidymodels</b>  
+│ │ ├─ <a href="https://textrecipes.tidymodels.org/">textrecipes</a> - Extra 'Recipes' for Text Processing  
+│ │ ├─ <a href="https://github.com/tidymodels/themis">themis</a>      - Extra 'Recipes' steps for unbalanced data  
+│ │ └─ <a href="https://github.com/tidymodels/censored/">censored</a>    - Parsnip wrappers for survival models  
+│ ├─🎨 <b>Colors</b>  
+│ │ ├─ <a href="https://github.com/EmilHvitfeldt/prismatic">prismatic</a>   - Simple color manipulation  
+│ │ └─ <a href="https://emilhvitfeldt.github.io/paletteer/">paletteer</a>   - Functions for all R color palettes  
+│ ├─📖 <b>Text</b>  
+│ │ ├─ <a href="https://emilhvitfeldt.github.io/emoji/">emoji</a>       - Data and functions about emojis  
+│ │ ├─ <a href="https://emilhvitfeldt.github.io/friends/">friends</a>     - Complete script transcription of the Friends  
+│ │ ├─ <a href="https://emilhvitfeldt.github.io/textdata/">textdata</a>    - Download and Load Various Text Datasets  
+│ │ └─ <a href="https://emilhvitfeldt.github.io/wordsalad/">wordsalad</a>   - Extract and Analyze Word Vectors  
+│ └─📌 <b>Other</b>  
+│   ├─ <a href="https://emilhvitfeldt.github.io/ggpage/">ggpage</a>      - Creates Page Layout Visualizations  
+│   └─ <a href="https://github.com/EmilHvitfeldt/gganonymize">gganonumize</a> - Anonymize the labels and text in a ggplot2  
+├─🌟 <b>Projects</b>  
+│ ├─ <a href="https://github.com/EmilHvitfeldt/R-text-data">R-text-data</a>       - List of textual data in R  
+│ ├─ <a href="https://emilhvitfeldt.github.io/r-color-palettes/">r-color-palettes</a>  - Showcase of all color palettes in R  
+│ ├─ <a href="https://www.emilhvitfeldt.com/">emilhvitfeldt.com</a> - Personal Blog  
+│ └─ <a href="https://xaringan.gallery/">xaringan.gallery</a>  - Collection of examples and custom themes  
+├─📚 <b>Books</b>  
+│ └─ <a href="https://smltar.com/">smltar</a> - Supervised Machine Learning for Text Analysis in R  
+├─🧑‍🏫 <b>Education Material</b>  
+│ ├─ <a href="https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html">ISLR tidymodels labs</a> - Tidymodels translation of ISLR labs  
+│ └─ <a href="https://github.com/EmilHvitfeldt/emilverse">emilverse</a>            - Collection of personal packages and templates  
+└─💡 <b>Other</b>  
+  └─ <a href="https://github.com/EmilHvitfeldt/talks">Talks</a> - My public talks
+
 </pre>

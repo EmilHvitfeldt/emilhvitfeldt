@@ -1,0 +1,196 @@
+---
+output: github_document
+---
+
+<pre>
+
+```{r, results='asis', echo=FALSE}
+library(htmltools)
+library(emoji)
+
+leaf <- function(name, link, desc, space) {
+  paste0(
+    " ",
+    as.character(a(name, href = link)),
+    strrep(" ", space),
+    "- ",
+    desc
+  )
+}
+
+prismatic <- leaf(
+  "prismatic", 
+  "https://github.com/EmilHvitfeldt/prismatic", 
+  "Simple color manipulation", 
+  3
+)
+
+smltar <- leaf(
+  "smltar",
+  "https://smltar.com/",
+  "Supervised Machine Learning for Text Analysis in R",
+  1
+)
+
+emoji <- leaf(
+  "emoji",
+  "https://emilhvitfeldt.github.io/emoji/",
+  "Data and functions about emojis",
+  7
+)
+
+islr_tidymodels <- leaf(
+  "ISLR tidymodels labs",
+  "https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html",
+  "Tidymodels translation of ISLR labs",
+  1
+)
+
+r_text_data <- leaf(
+  "R-text-data",
+  "https://github.com/EmilHvitfeldt/R-text-data",
+  "List of textual data in R",
+  7
+)
+
+r_color_palettes <- leaf(
+  "r-color-palettes",
+  "https://emilhvitfeldt.github.io/r-color-palettes/",
+  "Showcase of all color palettes in R",
+  2
+)
+
+emilverse <- leaf(
+  "emilverse",
+  "https://github.com/EmilHvitfeldt/emilverse",
+  "Collection of personal packages and templates",
+  12
+)
+
+blog <- leaf(
+  "emilhvitfeldt.com",
+  "https://www.emilhvitfeldt.com/",
+  "Personal Blog",
+  1
+)
+
+paletteer <- leaf(
+  "paletteer",
+  "https://emilhvitfeldt.github.io/paletteer/",
+  "Functions for all R color palettes",
+  3
+)
+
+talks <- leaf(
+  "Talks",
+  "https://github.com/EmilHvitfeldt/talks",
+  "My public talks",
+  1
+)
+
+xaringan.gallery <- leaf(
+  "xaringan.gallery",
+  "https://xaringan.gallery/",
+  "Collection of examples and custom themes",
+  2
+)
+
+friends <- leaf(
+  "friends",
+  "https://emilhvitfeldt.github.io/friends/",
+  "Complete script transcription of the Friends",
+  5
+)
+
+textdata <- leaf(
+  "textdata",
+  "https://emilhvitfeldt.github.io/textdata/",
+  "Download and Load Various Text Datasets",
+  4
+)
+
+wordsalad <- leaf(
+  "wordsalad",
+  "https://emilhvitfeldt.github.io/wordsalad/",
+  "Extract and Analyze Word Vectors",
+  3
+)
+
+ggpage <- leaf(
+  "ggpage",
+  "https://emilhvitfeldt.github.io/ggpage/",
+  "Creates Page Layout Visualizations",
+  6
+)
+
+gganonymize <- leaf(
+  "gganonumize",
+  "https://github.com/EmilHvitfeldt/gganonymize",
+  "Anonymize the labels and text in a ggplot2",
+  1
+)
+
+textrecipes <- leaf(
+  "textrecipes",
+  "https://textrecipes.tidymodels.org/",
+  "Extra 'Recipes' for Text Processing",
+  1
+)
+
+themis <- leaf(
+  "themis",
+  "https://github.com/tidymodels/themis",
+  "Extra 'Recipes' steps for unbalanced data",
+  6
+)
+
+censored <- leaf(
+  "censored",
+  "https://github.com/tidymodels/censored/",
+  "Parsnip wrappers for survival models",
+  4
+)
+
+header <- function(emoji, text) {
+  res <- glue::glue(":{emoji}: <b>{text}</b>")
+  emoji_glue(res)
+}
+
+data <- tibble::tribble(
+  ~id, ~child, ~text,
+  "emil", c("packages", "projects", "books", "edu", "other"), header("puzzle", "Emil Hvitfeldt"),
+  "packages", c("tidymodels", "colors", "text", "other-pkg"), header("package", "Packages"),
+    "tidymodels", c("textrecipes", "themis", "censored"), header("gear", "tidymodels"),
+      "textrecipes", c(), textrecipes,
+      "themis", c(), themis,
+      "censored", c(), censored,
+    "colors", c("prismatic", "paletteer"), header("artist_palette", "Colors"),
+      "prismatic", c(), prismatic,
+      "paletteer", c(), paletteer,
+    "text", c("emoji", "friends", "textdata", "wordsalad"), header("book", "Text"),
+      "emoji", c(), emoji,
+      "friends", c(), friends,
+      "textdata", c(), textdata,
+      "wordsalad", c(), wordsalad,
+    "other-pkg", c("ggpage", "gganonymize"), header("pushpin", "Other"),
+      "ggpage", c(), ggpage,
+      "gganonymize", c(), gganonymize,
+  "projects", c("r-text-data", "r-color-pals", "blog", "xaringan.gallery"), header("glowing_star", "Projects"),
+    "r-text-data", c(), r_text_data,
+    "r-color-pals", c(), r_color_palettes,
+    "blog", c(), blog,
+    "xaringan.gallery", c(), xaringan.gallery,
+  "books",    c("smltar"), header("books", "Books"),
+    "smltar", c(), smltar,
+  "edu",      c("islr_tidymodels", "emilverse"), header("teacher", "Education Material"),
+    "islr_tidymodels", c(), islr_tidymodels,
+    "emilverse", c(), emilverse,
+  "other", c("talks"), header("light_bulb", "Other"),
+    "talks", c(), talks
+  
+)
+
+cat(paste0(cli::tree(data, width = 10000), collapse = "  \n"))
+```
+
+</pre>
