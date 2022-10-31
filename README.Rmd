@@ -165,6 +165,20 @@ courses <- leaf(
   3
 )
 
+quarto_rough_notation <- leaf(
+  "rough-notation",
+  "https://github.com/EmilHvitfeldt/quarto-nes-theme",
+  "Use roughnotation javascript in revealjs presentations",
+  1
+)
+
+quarto_nes_theme <- leaf(
+  "NES.css theme",
+  "https://github.com/EmilHvitfeldt/quarto-nes-theme",
+  "A Quarto reveal.js theme based on NES.css",
+  2
+)
+
 header <- function(emoji, text) {
   res <- glue::glue(":{emoji}: <b>{text}</b>")
   emoji_glue(res)
@@ -172,7 +186,7 @@ header <- function(emoji, text) {
 
 data <- tibble::tribble(
   ~id, ~child, ~text,
-  "emil", c("packages", "projects", "books", "edu", "other"), header("puzzle", "Emil Hvitfeldt"),
+  "emil", c("packages", "Quarto", "projects", "books", "edu", "other"), header("puzzle", "Emil Hvitfeldt"),
   "packages", c("tidymodels", "colors", "text", "other-pkg"), header("package", "Packages"),
     "tidymodels", c("textrecipes", "themis", "censored"), header("gear", "tidymodels"),
       "textrecipes", c(), textrecipes,
@@ -189,6 +203,9 @@ data <- tibble::tribble(
     "other-pkg", c("ggpage", "gganonymize"), header("pushpin", "Other"),
       "ggpage", c(), ggpage,
       "gganonymize", c(), gganonymize,
+  "Quarto", c("rough-notation", "nes-theme"), header("blue_circle", "Quarto"),
+    "rough-notation", c(), quarto_rough_notation,
+    "nes-theme", c(), quarto_nes_theme,
   "projects", c("r-text-data", "r-color-pals", "blog", "xaringan.gallery"), header("glowing_star", "Projects"),
     "r-text-data", c(), r_text_data,
     "r-color-pals", c(), r_color_palettes,

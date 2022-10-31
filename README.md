@@ -18,6 +18,9 @@
 │ └─📌 <b>Other</b>  
 │   ├─ <a href="https://emilhvitfeldt.github.io/ggpage/">ggpage</a>      - Creates Page Layout Visualizations  
 │   └─ <a href="https://github.com/EmilHvitfeldt/gganonymize">gganonumize</a> - Anonymize the labels and text in a ggplot2  
+├─🔵 <b>Quarto</b>  
+│ ├─ <a href="https://github.com/EmilHvitfeldt/quarto-nes-theme">rough-notation</a> - Use roughnotation javascript in revealjs presentations  
+│ └─ <a href="https://github.com/EmilHvitfeldt/quarto-nes-theme">NES.css theme</a>  - A Quarto reveal.js theme based on NES.css  
 ├─🌟 <b>Projects</b>  
 │ ├─ <a href="https://github.com/EmilHvitfeldt/R-text-data">R-text-data</a>       - List of textual data in R  
 │ ├─ <a href="https://emilhvitfeldt.github.io/r-color-palettes/">r-color-palettes</a>  - Showcase of all color palettes in R  
