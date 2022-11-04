@@ -167,9 +167,16 @@ courses <- leaf(
 
 quarto_rough_notation <- leaf(
   "rough-notation",
-  "https://github.com/EmilHvitfeldt/quarto-nes-theme",
+  "https://github.com/EmilHvitfeldt/quarto-roughnotation",
   "Use roughnotation javascript in revealjs presentations",
   1
+)
+
+quarto_designmode <- leaf(
+  "designMode",
+  "https://github.com/EmilHvitfeldt/quarto-designmode",
+  "Enable designMode in html Quarto output",
+  5
 )
 
 quarto_nes_theme <- leaf(
@@ -203,7 +210,8 @@ data <- tibble::tribble(
     "other-pkg", c("ggpage", "gganonymize"), header("pushpin", "Other"),
       "ggpage", c(), ggpage,
       "gganonymize", c(), gganonymize,
-  "Quarto", c("rough-notation", "nes-theme"), header("blue_circle", "Quarto"),
+  "Quarto", c("rough-notation", "nes-theme", "designmode"), header("blue_circle", "Quarto"),
+    "designmode", c(), quarto_designmode,
     "rough-notation", c(), quarto_rough_notation,
     "nes-theme", c(), quarto_nes_theme,
   "projects", c("r-text-data", "r-color-pals", "blog", "xaringan.gallery"), header("glowing_star", "Projects"),
