@@ -4,6 +4,7 @@
 🧩 <b>Emil Hvitfeldt</b>  
 ├─📦 <b>Packages</b>  
 │ ├─⚙️ <b>tidymodels</b>  
+│ │ ├─ <a href="https://tidyclust.tidymodels.org/">tidyclust</a>   - Clustering in tidymodels  
 │ │ ├─ <a href="https://textrecipes.tidymodels.org/">textrecipes</a> - Extra 'Recipes' for Text Processing  
 │ │ ├─ <a href="https://github.com/tidymodels/themis">themis</a>      - Extra 'Recipes' steps for unbalanced data  
 │ │ └─ <a href="https://github.com/tidymodels/censored/">censored</a>    - Parsnip wrappers for survival models  

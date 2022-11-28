@@ -137,6 +137,13 @@ textrecipes <- leaf(
   1
 )
 
+tidyclust <- leaf(
+  "tidyclust",
+  "https://tidyclust.tidymodels.org/",
+  "Clustering in tidymodels",
+  3
+)
+
 themis <- leaf(
   "themis",
   "https://github.com/tidymodels/themis",
@@ -195,7 +202,8 @@ data <- tibble::tribble(
   ~id, ~child, ~text,
   "emil", c("packages", "Quarto", "projects", "books", "edu", "other"), header("puzzle", "Emil Hvitfeldt"),
   "packages", c("tidymodels", "colors", "text", "other-pkg"), header("package", "Packages"),
-    "tidymodels", c("textrecipes", "themis", "censored"), header("gear", "tidymodels"),
+    "tidymodels", c("tidyclust", "textrecipes", "themis", "censored"), header("gear", "tidymodels"),
+      "tidyclust", c(), tidyclust,
       "textrecipes", c(), textrecipes,
       "themis", c(), themis,
       "censored", c(), censored,
