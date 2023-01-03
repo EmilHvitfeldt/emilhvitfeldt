@@ -176,22 +176,30 @@ quarto_rough_notation <- leaf(
   "rough-notation",
   "https://github.com/EmilHvitfeldt/quarto-roughnotation",
   "Use roughnotation javascript in revealjs presentations",
-  1
+  11
 )
 
 quarto_designmode <- leaf(
   "designMode",
   "https://github.com/EmilHvitfeldt/quarto-designmode",
   "Enable designMode in html Quarto output",
-  5
+  15
 )
 
 quarto_nes_theme <- leaf(
   "NES.css theme",
   "https://github.com/EmilHvitfeldt/quarto-nes-theme",
   "A Quarto reveal.js theme based on NES.css",
-  2
+  12
 )
+
+quarto_revealjs_letterbox <- leaf(
+  "revealjs letterbox theme",
+  "https://github.com/EmilHvitfeldt/quarto-revealjs-letterbox",
+  "A Quarto reveal.js theme for letterbox styled slides",
+  1
+)
+
 
 header <- function(emoji, text) {
   res <- glue::glue(":{emoji}: <b>{text}</b>")
@@ -218,8 +226,9 @@ data <- tibble::tribble(
     "other-pkg", c("ggpage", "gganonymize"), header("pushpin", "Other"),
       "ggpage", c(), ggpage,
       "gganonymize", c(), gganonymize,
-  "Quarto", c("rough-notation", "nes-theme", "designmode"), header("blue_circle", "Quarto"),
+  "Quarto", c("rough-notation", "revealjs-letterbox", "nes-theme", "designmode"), header("blue_circle", "Quarto"),
     "designmode", c(), quarto_designmode,
+    "revealjs-letterbox", c(), quarto_revealjs_letterbox,
     "rough-notation", c(), quarto_rough_notation,
     "nes-theme", c(), quarto_nes_theme,
   "projects", c("r-text-data", "r-color-pals", "blog", "xaringan.gallery"), header("glowing_star", "Projects"),
