@@ -1,7 +1,6 @@
 
 <pre>
-
-🧩 <b>Emil Hvitfeldt</b>  
+&#10;🧩 <b>Emil Hvitfeldt</b>  
 ├─📦 <b>Packages</b>  
 │ ├─⚙️ <b>tidymodels</b>  
 │ │ ├─ <a href="https://tidyclust.tidymodels.org/">tidyclust</a>   - Clustering in tidymodels  
@@ -30,7 +29,8 @@
 │ ├─ <a href="https://www.emilhvitfeldt.com/">emilhvitfeldt.com</a> - Personal Blog  
 │ └─ <a href="https://xaringan.gallery/">xaringan.gallery</a>  - Collection of examples and custom themes  
 ├─📚 <b>Books</b>  
-│ └─ <a href="https://smltar.com/">smltar</a> - Supervised Machine Learning for Text Analysis in R  
+│ ├─ <a href="https://smltar.com/">smltar</a>                 - Supervised Machine Learning for Text Analysis in R  
+│ └─ <a href="https://feaz-book.com/">Feature Engieering A-Z</a> - Everything you need to know abut feature engineering  
 ├─🧑‍🏫 <b>Education Material</b>  
 │ ├─ <a href="https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/index.html">ISLR tidymodels labs</a> - Tidymodels translation of ISLR labs  
 │ └─ <a href="https://github.com/EmilHvitfeldt/emilverse">emilverse</a>            - Collection of personal packages and templates  
@@ -38,5 +38,4 @@
   ├─ <a href="https://github.com/EmilHvitfeldt/talks">Talks</a>     - My public talks  
   ├─ <a href="https://github.com/EmilHvitfeldt/workshops">Workshops</a> - My Public Workshops  
   └─ <a href="https://github.com/EmilHvitfeldt/courses">Courses</a>   - My Public Courses
-
-</pre>
+&#10;</pre>

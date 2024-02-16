@@ -29,6 +29,13 @@ smltar <- leaf(
   "smltar",
   "https://smltar.com/",
   "Supervised Machine Learning for Text Analysis in R",
+  17
+)
+
+feazbook <- leaf(
+  "Feature Engieering A-Z",
+  "https://feaz-book.com/",
+  "Everything you need to know abut feature engineering",
   1
 )
 
@@ -236,7 +243,8 @@ data <- tibble::tribble(
     "r-color-pals", c(), r_color_palettes,
     "blog", c(), blog,
     "xaringan.gallery", c(), xaringan.gallery,
-  "books", c("smltar"), header("books", "Books"),
+  "books", c("smltar", "feazbook"), header("books", "Books"),
+    "feazbook", c(), feazbook,
     "smltar", c(), smltar,
   "edu", c("islr_tidymodels", "emilverse"), header("teacher", "Education Material"),
     "islr_tidymodels", c(), islr_tidymodels,
