@@ -1,10 +1,11 @@
 ---
-output: github_document
+format: gfm
 ---
 
-<pre>
+```{r}
+#| output: asis
+#| echo: false
 
-```{r, results='asis', echo=FALSE}
 library(htmltools)
 library(emoji)
 
@@ -165,6 +166,13 @@ censored <- leaf(
   4
 )
 
+orbital <- leaf(
+  "orbital",
+  "https://github.com/tidymodels/orbital/",
+  "Turn tidymodels workflows to SQL",
+  5
+)
+
 workshops <- leaf(
   "Workshops",
   "https://github.com/EmilHvitfeldt/workshops",
@@ -217,11 +225,12 @@ data <- tibble::tribble(
   ~id, ~child, ~text,
   "emil", c("packages", "Quarto", "projects", "books", "edu", "other"), header("puzzle", "Emil Hvitfeldt"),
   "packages", c("tidymodels", "colors", "text", "other-pkg"), header("package", "Packages"),
-    "tidymodels", c("tidyclust", "textrecipes", "themis", "censored"), header("gear", "tidymodels"),
+    "tidymodels", c("tidyclust", "textrecipes", "themis", "censored", "orbital"), header("gear", "tidymodels"),
       "tidyclust", c(), tidyclust,
       "textrecipes", c(), textrecipes,
       "themis", c(), themis,
       "censored", c(), censored,
+      "orbital", c(), orbital,
     "colors", c("prismatic", "paletteer"), header("artist_palette", "Colors"),
       "prismatic", c(), prismatic,
       "paletteer", c(), paletteer,
@@ -255,7 +264,7 @@ data <- tibble::tribble(
     "courses", c(), courses
 )
 
+cat("<pre>")
 cat(paste0(cli::tree(data, width = 10000), collapse = "  \n"))
+cat("</pre>")
 ```
-
-</pre>

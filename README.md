@@ -1,12 +1,13 @@
 
-<pre>
-&#10;🧩 <b>Emil Hvitfeldt</b>  
+
+<pre>🧩 <b>Emil Hvitfeldt</b>  
 ├─📦 <b>Packages</b>  
 │ ├─⚙️ <b>tidymodels</b>  
 │ │ ├─ <a href="https://tidyclust.tidymodels.org/">tidyclust</a>   - Clustering in tidymodels  
 │ │ ├─ <a href="https://textrecipes.tidymodels.org/">textrecipes</a> - Extra 'Recipes' for Text Processing  
 │ │ ├─ <a href="https://github.com/tidymodels/themis">themis</a>      - Extra 'Recipes' steps for unbalanced data  
-│ │ └─ <a href="https://github.com/tidymodels/censored/">censored</a>    - Parsnip wrappers for survival models  
+│ │ ├─ <a href="https://github.com/tidymodels/censored/">censored</a>    - Parsnip wrappers for survival models  
+│ │ └─ <a href="https://github.com/tidymodels/orbital/">orbital</a>     - Turn tidymodels workflows to SQL  
 │ ├─🎨 <b>Colors</b>  
 │ │ ├─ <a href="https://github.com/EmilHvitfeldt/prismatic">prismatic</a>   - Simple color manipulation  
 │ │ └─ <a href="https://emilhvitfeldt.github.io/paletteer/">paletteer</a>   - Functions for all R color palettes  
@@ -37,5 +38,4 @@
 └─💡 <b>Other</b>  
   ├─ <a href="https://github.com/EmilHvitfeldt/talks">Talks</a>     - My public talks  
   ├─ <a href="https://github.com/EmilHvitfeldt/workshops">Workshops</a> - My Public Workshops  
-  └─ <a href="https://github.com/EmilHvitfeldt/courses">Courses</a>   - My Public Courses
-&#10;</pre>
+  └─ <a href="https://github.com/EmilHvitfeldt/courses">Courses</a>   - My Public Courses</pre>
